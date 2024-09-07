@@ -1,0 +1,261 @@
+@font-face {
+  font-family: "Euclid";
+  src: url("./assets/fonts/1.ttf");
+}
+* {
+  margin: 0;
+  font-family: "Euclid", monospace;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 60px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-logo {
+  height: 50px;
+  width: 110px;
+}
+
+.logo {
+  background-image: url(https://cdn.prod.website-files.com/62e8d2ea218fb7676b6892a6/63c7cf41dcf6a412600c7b3f_amazon.png);
+  /* background-size: cover;
+    height: 25px;
+    width: 85;
+    padding-bottom: 15px; */
+  background-size: cover;
+  height: 30px;
+  width: 120px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-left: -15px;
+}
+
+.border {
+  border: 2px solid transparent;
+}
+
+.border:hover {
+  border: 2px solid white;
+}
+
+/* box */
+.add-first {
+  color: #cccccc;
+  font-size: 0.8rem;
+  margin-left: 15px;
+}
+
+.add-sec {
+  font-size: 1rem;
+  margin-left: 3px;
+}
+
+.add-icon {
+  display: flex;
+  align-items: center;
+}
+
+/* box3 */
+.nav-search {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: pink;
+  width: 620px;
+  height: 40px;
+  border-radius: 3px;
+}
+
+.Search-select {
+  background-color: #f3f3f3;
+  width: 50px;
+  text-align: center;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: none;
+}
+
+.Search-input {
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+}
+
+.search-icon {
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  background-color: #febd68;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  color: black;
+}
+
+.nav-search:hover {
+  border: 2px solid orange;
+}
+
+/* box4 */
+.nav-first {
+  font-size: 0.7rem;
+}
+
+.nav-sec {
+  font-size: 0.85;
+  font-weight: 700;
+}
+
+/* box6 */
+.nav-cart i {
+  font-size: 30px;
+}
+
+.nav-cart {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/* panel */
+.panel {
+  height: 40px;
+  background-color: #222f3d;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 3px solid white;
+}
+.panel p:hover {
+  border-bottom: 3px solid white;
+}
+
+.panel-ops p {
+  display: inline;
+  margin-left: 15px;
+}
+
+.panel-ops {
+  width: 70%;
+  font-size: 0.85rem;
+}
+
+.panel-deals {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+/* hero-section */
+.hero-section {
+  background-image: url(https://static3.makeuseofimages.com/wordpress/wp-content/uploads/2016/07/buy-electronics.jpg);
+  background-size: cover;
+  height: 600px;
+  /*width: 900px;*/
+}
+
+/**.img{
+    background-image:url(pic.jpeg);
+    background-size: cover;
+    height: 900px; ;
+} **/
+.cards {
+  display: flex;
+  grid-template-columns: 3fr;
+  justify-content: space-between;
+  padding: 30px;
+  padding-top: 0px;
+  margin-top: -150px;
+  backdrop-filter: blur(7px);
+  flex-wrap: wrap;
+}
+
+.cards .card {
+  display: flex;
+  column-span: span 1 / span 1;
+  flex-direction: column;
+  padding: 16px;
+  max-width: 450px;
+  gap: 5px;
+  width: 30%;
+  min-width: 310px;
+  box-shadow: 3px 3px 3px rgba(167, 151, 151, 0.582);
+  background-color: #f3f3f3;
+}
+
+.cards .card img {
+  width: 150px;
+  aspect-ratio: 1 /1;
+  object-fit: contain;
+}
+
+.cards .card p {
+  font-size: 14px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-left: 10px;
+}
+
+.cards .card .continer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2px;
+  justify-content: space-between;
+}
+
+.cards .card {
+  .box {
+    flex: 1;
+    margin-bottom: 5px;
+  }
+
+  .explore {
+    button {
+      background-color: none;
+      border: none;
+      color: rgb(17, 122, 122);
+      letter-spacing: 2px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      color: salmon;
+    }
+  }
+}
+.sec-3 {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.section-third {
+  flex-direction: row;
+  max-width: 100vw;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  /* align-items: center; */
+  justify-content: space-between;
+  box-shadow: 0px 5px 15px #222f3d;
+  padding: 20px;
+}
+.section-third .box3 {
+  max-width: 400px;
+  height: 400px;
+  box-shadow: 3px 2px 2px #222f3d;
+
+  div {
+    object-fit: contain;
+    img {
+      width: 300px;
+      aspect-ratio: 1/1;
+    }
+  }
+}
